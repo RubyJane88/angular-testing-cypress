@@ -17,20 +17,28 @@
         <label class="label" for="name">
           name
         </label>
-        <input name="name" class="input" type="text" [(ngModel)]="editingVillain.name" placeholder="e.g. Colleen" />
+        <input
+          data-testid="name"
+          name="name" class="input" type="text" [(ngModel)]="editingVillain.name" placeholder="e.g. Colleen" />
       </div>
       <div class="field">
         <label class="label" for="description">
           description
         </label>
-        <input name="description" class="input" type="text" [(ngModel)]="editingVillain.description" placeholder="dance fight!" />
+        <input
+          data-testid="description"
+          name="description" class="input" type="text" [(ngModel)]="editingVillain.description" placeholder="dance fight!" />
       </div>
     </div>
   </div>
   <footer class="card-footer ">
-    <app-button-footer class="card-footer-item" [className]="'cancel-button'" [iconClasses]="'fas fa-undo'" (clicked)="clear()"
+    <app-button-footer
+      data-testid="cancel-button"
+      class="card-footer-item" [className]="'cancel-button'" [iconClasses]="'fas fa-undo'" (clicked)="clear()"
       label="Cancel" [item]="editingVillain"></app-button-footer>
-    <app-button-footer class="card-footer-item" [className]="'save-button'" [iconClasses]="'fas fa-save'" (clicked)="saveVillain()"
+    <app-button-footer
+      data-testid="save-button"
+      class="card-footer-item" [className]="'save-button'" [iconClasses]="'fas fa-save'" (clicked)="saveVillain()"
       label="Save" [item]="editingVillain"></app-button-footer>
   </footer>
 </div>

@@ -3,7 +3,7 @@
     role="presentation"
     *ngFor="let villain of villains; trackBy: trackByVillain; let i = index"
   >
-    <div class="card">
+    <div data-testid="card-villains" class="card">
       <app-card-content
         [name]="villain.name"
         [description]="villain.description"

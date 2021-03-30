@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
       <a routerLink="/heroes" routerLinkActive="router-link-active">
         <span>Heroes</span>
       </a>
-      <a routerLink="/villains" routerLinkActive="router-link-active">
+      <a  data-testid="nav-villains"  routerLink="/villains" routerLinkActive="router-link-active">
         <span>Villains</span>
       </a>
       <a routerLink="/about" routerLinkActive="router-link-active">
